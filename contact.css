@@ -1,0 +1,62 @@
+.main-content-contact{
+    margin-top: 120px;
+    padding: 0 20px
+}
+
+.main-container-contact {
+    display: grid;
+    grid-template-areas: 'contact'
+        'location';
+        border-top: 2px solid #333;
+        padding-top: 80px;
+
+}
+
+
+.contact{
+    grid-area: contact;
+    margin-bottom: 20px;
+
+}
+
+.contact form {
+    margin-top: 40px
+}
+
+.form-group{
+    border: none
+}
+
+.form-control {
+    border: 1px solid #000;
+    border-radius: 0;
+}
+
+.btn {
+    border-radius: 0;
+
+}
+
+.location {
+    grid-area: location;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.google-map {
+    width: 100%;
+    height: 200px;
+}
+
+.google-map iframe {
+    width: 100%;
+    height: 100%;
+}
+.address-item h3{
+    font-size: 1.3rem;
+}
+
+.google-map {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,57 @@
+.main-content-about-us{
+    margin-top: 120px;
+    padding: 0 20px
+}
+
+.main-container-about-us {
+    display: grid;
+    grid-template-areas: 'our-story'
+        'our-mission'
+        'gallery'
+        'skills';
+        border-top: 2px solid #333;
+        padding-top: 20px;
+
+}
+
+.main-container-about-us .sub-title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+.our-story {
+    grid-area: our-story;
+}
+
+
+.our-mission {
+    grid-area: our-mission;
+}
+
+
+.gallery {
+    grid-area: gallery;
+}
+
+.gallery-group {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax( 200px, 1fr));
+    grid-gap: 20px;
+}
+
+.gallery-item img{
+    width: 100%;
+}
+
+.skills {
+    grid-area: skills;
+    padding: 0;
+}
+
+.skills ul{
+    list-style: none;
+    padding: 0;
+}
+
+
+.skills ul li{
+}

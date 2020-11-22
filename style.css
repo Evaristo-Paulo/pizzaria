@@ -1,0 +1,180 @@
+body,
+html {
+    height: 100vmax;
+    text-align: justify;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 115px 1fr 90px;
+    grid-template-areas: 'header'
+        'main-content'
+        'footer';
+    height: 100vmax
+}
+
+.main-header {
+    grid-area: header;
+}
+
+
+.main-content {
+    grid-area: main-content;
+}
+
+
+.main-footer {
+    grid-area: footer;
+    padding-left: 20px;
+    padding-top: 10px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 50px;
+    clear: left;
+}
+
+.main-header,
+.navbar {
+    background-color: #B22D00;
+}
+
+.navbar {
+    padding-bottom: 0px;
+    height: 120px;
+}
+
+.logotipo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.logotipo>h2 {
+    color: #fff
+}
+
+.logotipo-img {
+    border: 1px solid rgba(51, 51, 51, 0.548);
+    border-radius: 50%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    background-color: #fff;
+}
+
+#navbarSupportedContent {
+    border-top: 1px solid rgba(0, 0, 0, 0.63);
+    margin: 20px -17px 0 -17px;
+    background-color: #d9a300c7;
+    padding: 0 20px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #000
+}
+
+.navbar-nav .nav-item .contact-company {
+    margin-top: 10px;
+}
+
+.navbar-nav .nav-item .contact-company h3 {
+    font-size: 1rem;
+    color: #000
+}
+
+.contact-company h3 {
+    font-size: 1rem;
+    color: #fff
+}
+
+.contact-company.outside,
+.navbar-toggler {
+    margin-right: 20px
+}
+
+.cover {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-content {
+    display: grid;
+    grid-template-areas: 'main-pizza main-pizza'
+        'flavour flavour'
+        'history history';
+    margin-top: 120px;
+    padding: 0 20px
+}
+
+.main-pizza {
+    grid-area: main-pizza;
+}
+
+.main-pizza .cardapio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 20px;
+    margin: 0 auto;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    padding-top: 20px;
+}
+
+.main-pizza .cardapio figure {
+    min-width: 100%;
+}
+
+
+.main-pizza .cardapio figure img {
+    width: 100%;
+}
+
+.main-pizza .cardapio figure figcaption {
+    text-align: center;
+}
+
+
+.flavour {
+    grid-area: flavour;
+}
+
+.flavour-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.flavour-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flavour-group ul li {
+    background-color: #d9940091;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    color: rgba(0, 0, 0, 0.562)
+}
+
+.flavour-group ul:nth-child(2){
+    margin: 0 20px;
+}
+
+
+.history {
+    grid-area: history;
+}
+
+.sub-title {
+    margin-top: 30px;
+}
+
+.history p a{
+    color: tomato
+}
